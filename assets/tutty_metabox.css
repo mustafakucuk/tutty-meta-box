@@ -1,0 +1,116 @@
+.tutty-element {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.tutty-element:first-child {
+    border: none;
+}
+
+.tutty-element-title {
+    width: 15%;
+    position: relative;
+    float: left;
+}
+
+.tutty-element:not(.tutty-element-heading) .tutty-element-f {
+    margin-left: 20%;
+}
+
+.tutty-element-f input[type=text], textarea {
+    width: 100%;
+}
+
+.tutty-element-upload .tutty-element-f input[type=text] {
+    width: 80%;
+}
+
+.tutty-element-upload .tutty-element-f input[type=button] {
+    margin-left: 10px;
+    height: 24px;
+    line-height: 22px;
+}
+
+.tutty-element-f textarea {
+    min-height: 100px;
+}
+
+.tutty-element label {
+    font-weight: bold;
+    line-height: 27px;
+}
+
+.tutty-element-checkbox .tutty-element-f label {
+    font-weight: normal;
+    display: block;
+}
+
+.tutty-element-checkbox input {
+    margin: 0px 4px 0 0;
+}
+
+.tutty-element-desc {
+    color: #969696;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+.tutty-heading {
+    background: #f9f9f9;
+    padding: 20px;
+    color: #737373;
+    border-left: 5px solid #1043CE;
+    display: grid;
+}
+
+.tutty-heading-title {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.tutty-heading-content {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.tutty-element-switcher input[type=checkbox]{
+    display: none;
+}
+
+.tutty-element-switcher .tutty-element-f label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 80px;
+    height: 30px;
+    background: #ff6d70;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.tutty-element-switcher .tutty-element-f label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.tutty-element-switcher input:checked + label {
+	background: #03a9f4;
+}
+
+.tutty-element-switcher input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.tutty-element-switcher label:active:after {
+	width: 60px;
+}
