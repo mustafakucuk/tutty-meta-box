@@ -1,6 +1,10 @@
 # Tutty Meta Box Framework
 Create custom fields with simple and easy to use WordPress meta box framework.
 
+## Screenshots
+![Tutty Meta Box - Screen Shot](https://mustafakucuk.net/tutty/screenshot-1.png)
+![Tutty Meta Box - Screen Shot](https://mustafakucuk.net/tutty/screenshot-2.png)
+
 ## Fields
 - Text
 - Number
