@@ -67,7 +67,6 @@ class Tutty_MetaBox {
         $fields     = $callback['args']['fields'];
         $metabox_id = $callback['args']['id'];
         $meta_value = get_post_meta( $post->ID, $metabox_id, true );
-        print_r($meta_value);
 
         foreach( $fields as $field ) {
             $field_id = ( isset( $field['id'] ) ? $field['id'] : '' );
